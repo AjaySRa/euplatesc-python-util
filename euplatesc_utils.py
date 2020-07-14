@@ -32,8 +32,8 @@ def euplatesc_mac(key,params):
     return hmacmd5(key.encode('utf-8').hex(),data)
 
 
-#key="00112233445566778899AABBCCDDEEFF"
-#mid="testaccount"
+key="00112233445566778899AABBCCDDEEFF"
+mid="testaccount"
 
 params={
     'amount':'10.20',
