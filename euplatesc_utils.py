@@ -10,7 +10,7 @@ def hmacmd5(key, data):
     #pad key as per requirement of hmac algorithm with blocksize using bytes b'\0'
     key=key.ljust(blocksize, b"\0")
     #encode data to unicode 8 bit
-    return hmac.new(key,data.encode('utf-8')).hexdigest().upper()
+    return hmac.new(key,data.encode('utf-8'), digestmod='MD5').hexdigest().upper()
 
 def euplatesc_mac(key,params):
     data=""
